@@ -29,8 +29,8 @@ RUN mkdir -p /app/logs
 EXPOSE 3000
 
 # 添加健康检查
-#HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-#  CMD node healthcheck.js || exit 1
+# HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+#   CMD node healthcheck.js || exit 1
 
 # 设置启动命令
 # 使用默认配置启动服务器，支持通过环境变量配置
